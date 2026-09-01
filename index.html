@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PocketPeace — The Calming, Zero-Guilt Expense Companion for Indian College Students</title>
+  <meta name="description" content="Stop stressing over UPI payments & spreadsheets. PocketPeace gives Indian college students living in hostels & PGs a peaceful daily 'Safe-to-Spend' in ₹. 100% free forever." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans (Display), Inter (Body), Space Mono (Data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ambient Ambient Glows -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-middle" aria-hidden="true"></div>
+
+  <!-- 1. Floating Glass Navigation -->
+  <header class="header-container">
+    <nav class="nav-glass" aria-label="Main Navigation">
+      <a href="#" class="brand-logo">
+        <span class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"></path>
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </span>
+        <span class="brand-name">PocketPeace</span>
+        <span class="badge-free">100% Free for Students</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#live-demo">Live Demo</a>
+        <a href="#flatmate-split">Flatmate Split</a>
+        <a href="#why-free">Why It's Free</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="btn btn-nav-google" id="btnNavGoogle">
+          <svg class="google-icon" width="16" height="16" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+          </svg>
+          <span>Sign In</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. Hero Section: The Emotional Relief Hook + 1-Click OAuth -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left: Copy & 1-Click Stack -->
+        <div class="hero-content">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>Built for Indian students in hostels, PGs & shared flats</span>
+          </div>
+
+          <h1 class="hero-title">
+            No more UPI panic. <br/>
+            <span class="gradient-text">Know what you can spend today.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            The warm, zero-guilt daily expense companion for Indian college life. Stop making complicated Excel sheets for chai, Maggi, and auto fares. <strong>100% free forever.</strong>
+          </p>
+
+          <!-- 1-Click Auth Triggers -->
+          <div class="oauth-button-group">
+            <button class="btn btn-oauth btn-google" id="btnHeroGoogle">
+              <svg class="google-icon" width="20" height="20" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+              <span>Continue with Google</span>
+            </button>
+
+            <button class="btn btn-oauth btn-apple" id="btnHeroApple">
+              <svg width="19" height="19" viewBox="0 0 170 170" fill="currentColor">
+                <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.6-7.79-11.74-14.24-5.99-9.35-10.74-20.08-14.25-32.18-3.51-12.11-5.27-23.77-5.27-35 0-14.59 3.69-26.68 11.08-36.26 7.39-9.59 16.63-14.48 27.73-14.68 4.35 0 9.27 1.13 14.77 3.39 5.5 2.26 9.38 3.44 11.64 3.55 1.74 0 5.86-1.28 12.37-3.83 6.51-2.55 12.01-3.68 16.51-3.39 12.58.64 22.54 5.37 29.89 14.19-10.97 6.64-16.35 15.65-16.14 27.02.21 8.91 3.66 16.4 10.34 22.45 6.68 6.05 14.45 9.53 23.3 10.45-2.39 7.08-5.46 14.51-9.21 22.31zM119.22 33.5c0-7.39 2.67-14.26 8.01-20.61 5.34-6.35 12.01-10.35 20.02-12 1.09 5.76.65 11.74-1.32 17.94-1.97 6.2-5.48 11.64-10.53 16.33-4.68 4.24-9.75 6.87-15.21 7.89-.22-3.14-.97-6.32-.97-9.55z"/>
+              </svg>
+              <span>Continue with Apple</span>
+            </button>
+          </div>
+
+          <!-- Micro Proof Line -->
+          <div class="hero-trust-row">
+            <span class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4E8765" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              No bank or UPI PIN needed
+            </span>
+            <span class="trust-dot">•</span>
+            <span class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4E8765" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              100% Private to you
+            </span>
+            <span class="trust-dot">•</span>
+            <span class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4E8765" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Zero subscription fees
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Live Interactive Hero Widget (The "Safe-to-Spend" Simulator in INR) -->
+        <div class="hero-interactive-col" id="live-demo">
+          <div class="hero-widget-card glass-card">
+            
+            <!-- Widget Top Header -->
+            <div class="widget-header">
+              <div class="widget-tag">
+                <span class="widget-status-dot"></span>
+                <span>LIVE INR SIMULATOR</span>
+              </div>
+              <span class="widget-date" id="widgetCurrentDate">Today, 4:15 PM</span>
+            </div>
+
+            <!-- Main Safe-to-Spend Metric in Rupees -->
+            <div class="widget-balance-block">
+              <span class="balance-label">☀️ Safe-to-Spend Today</span>
+              <div class="balance-number-row">
+                <span class="balance-currency">₹</span>
+                <span class="balance-amount" id="safeSpendAmount">280</span>
+              </div>
+              <div class="balance-meta">
+                <span id="spentTodayText">₹120 spent</span> of <span class="mono-bold">₹400</span> daily budget
+              </div>
+            </div>
+
+            <!-- Visual Progress Meter -->
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" id="spendProgressBar" style="width: 70%;"></div>
+            </div>
+            <div class="progress-labels">
+              <span>₹0</span>
+              <span class="progress-status-msg" id="progressStatusMsg">✨ Plenty left for evening snacks & dinner</span>
+              <span>₹400</span>
+            </div>
+
+            <!-- Quick Tap Log Chips (Indian Student Context) -->
+            <div class="quick-log-section">
+              <p class="quick-log-title">Tap to simulate logging an Indian campus expense:</p>
+              <div class="quick-chips-grid">
+                <button class="chip-btn" data-name="☕ Cutting Chai & Samosa" data-amount="30" data-cat="fuel">
+                  <span>☕ +₹30 Chai & Samosa</span>
+                </button>
+                <button class="chip-btn" data-name="🍜 Late Night Maggi & Omelette" data-amount="70" data-cat="food">
+                  <span>🍜 +₹70 Canteen Maggi</span>
+                </button>
+                <button class="chip-btn" data-name="🛺 Shared Auto / Metro Fare" data-amount="40" data-cat="travel">
+                  <span>🛺 +₹40 Metro/Auto</span>
+                </button>
+                <button class="chip-btn" data-name="🛒 Blinkit/Zepto Hostel Split" data-amount="150" data-cat="living">
+                  <span>🛒 +₹150 Zepto Split</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Live Transaction Feed inside Widget -->
+            <div class="widget-feed-header">
+              <span>Today's Logged Items</span>
+              <button class="btn-reset-demo" id="btnResetDemo" title="Reset interactive demo">↺ Reset Demo</button>
+            </div>
+            <ul class="widget-transaction-list" id="widgetTxList">
+              <li class="tx-item">
+                <div class="tx-left">
+                  <span class="tx-icon-pill">☕</span>
+                  <div>
+                    <div class="tx-title">Morning Kadak Chai</div>
+                    <div class="tx-time">8:30 AM • College Tapri</div>
+                  </div>
+                </div>
+                <span class="tx-amount">-₹20</span>
+              </li>
+              <li class="tx-item">
+                <div class="tx-left">
+                  <span class="tx-icon-pill">🍛</span>
+                  <div>
+                    <div class="tx-title">Mess Lunch & Thali</div>
+                    <div class="tx-time">1:15 PM • Hostel Mess</div>
+                  </div>
+                </div>
+                <span class="tx-amount">-₹100</span>
+              </li>
+            </ul>
+
+            <!-- Custom Add Trigger -->
+            <button class="btn-widget-custom" id="btnOpenCustomModal">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Log Custom Campus Expense (₹)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. The Reality Check: Spreadsheets vs. PocketPeace -->
+    <section class="contrast-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">THE REALITY CHECK</span>
+          <h2 class="section-title">Why Excel sheets fail Indian hostelers by week two.</h2>
+          <p class="section-sub">You scan 10 GPay QR codes a day. Opening a spreadsheet on your phone while standing at a tapri or juice shop is never going to happen.</p>
+        </div>
+
+        <div class="contrast-grid">
+          <!-- Spreadsheets Card -->
+          <div class="contrast-card contrast-card-bad">
+            <div class="card-status-badge badge-bad">❌ The Spreadsheet Trap</div>
+            <h3 class="contrast-card-title">Clunky, Exhausting & Guilt-Heavy</h3>
+            <ul class="contrast-list">
+              <li>
+                <span class="list-cross">✕</span>
+                <div><strong>Manual UPI chaos:</strong> Tracking twenty ₹15–₹50 GPay transactions manually into 30 Excel columns.</div>
+              </li>
+              <li>
+                <span class="list-cross">✕</span>
+                <div><strong>Broken SUM() formulas:</strong> One accidental cell overwrite destroys your entire semester accounting.</div>
+              </li>
+              <li>
+                <span class="list-cross">✕</span>
+                <div><strong>End-of-month panic:</strong> Seeing "₹6,800 spent" on day 20 without knowing how to survive the next 10 days.</div>
+              </li>
+              <li>
+                <span class="list-cross">✕</span>
+                <div><strong>Guilt spirals:</strong> Red warning cells making you feel bad for grabbing an emergency Cold Coffee before exams.</div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- PocketPeace Card -->
+          <div class="contrast-card contrast-card-good">
+            <div class="card-status-badge badge-good">✨ The PocketPeace Way</div>
+            <h3 class="contrast-card-title">Calm, Instant & Emotionally Safe</h3>
+            <ul class="contrast-list">
+              <li>
+                <span class="list-check">✓</span>
+                <div><strong>3-Second Natural Input:</strong> Tap '+₹20 Chai' or type '60 maggi' right after scanning your QR code.</div>
+              </li>
+              <li>
+                <span class="list-check">✓</span>
+                <div><strong>Dynamic "Safe-to-Spend":</strong> Translates your monthly ₹8,000 pocket money into a peaceful daily allowance (₹266/day).</div>
+              </li>
+              <li>
+                <span class="list-check">✓</span>
+                <div><strong>Zero Bank Linking Anxiety:</strong> No bank login, no UPI PIN exposure, no spam SMS scraping.</div>
+              </li>
+              <li>
+                <span class="list-check">✓</span>
+                <div><strong>Gentle Recalibration:</strong> Spent ₹500 on weekend biryani? Tomorrow automatically smooths out without shame.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Interactive Bento Grid: 3 Pillars of Campus Peace -->
+    <section class="bento-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">BUILT FOR HOSTEL, PG & APARTMENT LIFE</span>
+          <h2 class="section-title">Everything you need to master your student budget.</h2>
+          <p class="section-sub">Thoughtfully engineered for split PG bills, Blinkit midnight orders, and weekend hangouts.</p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento Card 1: Safe-to-Spend Algorithm in INR (Wide) -->
+          <div class="bento-card bento-wide glass-card">
+            <div class="bento-content">
+              <span class="bento-badge">DAILY PULSE ALGORITHM</span>
+              <h3 class="bento-title">The "Safe-to-Spend" Daily Pulse</h3>
+              <p class="bento-desc">
+                Got ₹4,500 left of your pocket money for the remaining 15 days of the month? PocketPeace calculates your safe daily baseline (<strong>₹300/day</strong>). If you spend ₹450 today on printouts and food, tomorrow gently recalibrates to <strong>₹289/day</strong>—no panic, just effortless pacing.
+              </p>
+              <div class="bento-pill-row">
+                <span class="pill-metric">✨ Daily auto-smoothing</span>
+                <span class="pill-metric">📅 Accounts for days till allowance</span>
+                <span class="pill-metric">🛡️ Preserves emergency train/medic fund</span>
+              </div>
+            </div>
+            <div class="bento-visual">
+              <div class="mini-calc-card">
+                <div class="calc-row">
+                  <span>Monthly Balance Left</span>
+                  <span class="mono-num">₹4,500</span>
+                </div>
+                <div class="calc-divider">÷ 15 days left till month-end</div>
+                <div class="calc-result-row">
+                  <span>Today's Safe Allowance</span>
+                  <span class="mono-highlight">₹300 / day</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 2: Interactive Flatmate & PG Splitter Widget in INR -->
+          <div class="bento-card bento-standard glass-card" id="flatmate-split">
+            <div class="bento-content">
+              <span class="bento-badge">FLATMATE HARMONY</span>
+              <h3 class="bento-title">PG & Flatmate Bill Splitter</h3>
+              <p class="bento-desc">Instantly split Zepto/Blinkit grocery orders, cook's salary, electricity bills, and WiFi without group chat arguments.</p>
+              
+              <!-- Live Interactive Flatmate Splitter -->
+              <div class="roommate-calc-widget">
+                <div class="calc-input-group">
+                  <label for="splitBillAmount">Total Shared Bill (₹)</label>
+                  <input type="number" id="splitBillAmount" value="1200" min="10" step="50" class="input-modern" />
+                </div>
+                <div class="calc-input-group">
+                  <label for="splitPeopleCount">Split Between (<span id="peopleCountLabel">3</span> Flatmates)</label>
+                  <input type="range" id="splitPeopleCount" min="2" max="6" value="3" class="range-slider" />
+                </div>
+                <div class="split-result-box">
+                  <span>Each person pays:</span>
+                  <strong class="split-amount-display" id="splitResultAmount">₹400</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 3: Guilt-Free Spending Badges -->
+          <div class="bento-card bento-standard glass-card">
+            <div class="bento-content">
+              <span class="bento-badge">EMOTIONAL WELLNESS</span>
+              <h3 class="bento-title">Guilt-Free Milestone Badges</h3>
+              <p class="bento-desc">We celebrate when you cook in the PG instead of ordering Zomato, save for your train ticket home, and build healthy money habits.</p>
+              
+              <div class="badge-showcase">
+                <div class="student-badge-item">
+                  <div class="badge-icon-wrap">🍛</div>
+                  <div>
+                    <div class="badge-name">Mess Master Streak</div>
+                    <div class="badge-sub">4 days eating at mess (Saved ~₹650)</div>
+                  </div>
+                </div>
+                <div class="student-badge-item">
+                  <div class="badge-icon-wrap">🚆</div>
+                  <div>
+                    <div class="badge-name">Tatkal Ticket Locked</div>
+                    <div class="badge-sub">Diwali / semester travel fund protected</div>
+                  </div>
+                </div>
+                <div class="student-badge-item">
+                  <div class="badge-icon-wrap">🧘</div>
+                  <div>
+                    <div class="badge-name">Month-End Hero</div>
+                    <div class="badge-sub">Reached the 30th with ₹800 surplus</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Living Away From Home Survival Presets in INR -->
+    <section class="presets-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">REAL INDIAN CAMPUS PRESETS</span>
+          <h2 class="section-title">One tap categories you actually spend on.</h2>
+          <p class="section-sub">No corporate categories. Just real Indian student living.</p>
+        </div>
+
+        <div class="preset-chips-wall">
+          <div class="preset-pill">☕ Tapri Chai & Samosa</div>
+          <div class="preset-pill">🍜 2 AM Hostel Maggi</div>
+          <div class="preset-pill">🛺 Shared Auto / Metro SmartCard</div>
+          <div class="preset-pill">📚 Xerox, Photocopy & Lab Files</div>
+          <div class="preset-pill">🛒 Zepto / Blinkit Ration Split</div>
+          <div class="preset-pill">🧺 Dhobi & PG Laundry Token</div>
+          <div class="preset-pill">📶 PG WiFi & Jio/Airtel Recharge</div>
+          <div class="preset-pill">🚆 IRCTC Train Ticket Home</div>
+          <div class="preset-pill">💊 Emergency Crocin & ORS</div>
+          <div class="preset-pill">🍕 Friday Night Swiggy/Zomato</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Radical Transparency: Why is this 100% Free? -->
+    <section class="transparency-section" id="why-free">
+      <div class="container">
+        <div class="transparency-card glass-card">
+          <div class="transparency-header">
+            <span class="section-tag">RADICAL TRANSPARENCY</span>
+            <h2 class="section-title">"Wait, why is this 100% free? How do you survive?"</h2>
+            <p class="transparency-intro">
+              As college students in India, we hated apps that baited us with a 7-day trial and then demanded ₹499/year. Here is our exact open promise:
+            </p>
+          </div>
+
+          <div class="transparency-grid">
+            <div class="transparency-item">
+              <div class="trans-icon">🛡️</div>
+              <h4>Zero Paywalls Ever</h4>
+              <p>Core daily budgeting, flatmate splitters, and safe-to-spend calculations will remain 100% free forever for all college students.</p>
+            </div>
+
+            <div class="transparency-item">
+              <div class="trans-icon">🔒</div>
+              <h4>No Financial Data Selling</h4>
+              <p>We do not scrape your SMS messages, track your bank accounts, or sell your profile to credit card and personal loan brokers.</p>
+            </div>
+
+            <div class="transparency-item">
+              <div class="trans-icon">🎁</div>
+              <h4>Ethical Student Perks</h4>
+              <p>We partner with genuine student brands (discounts on books, courses, hardware) that give you deals and fund our small server bills.</p>
+            </div>
+
+            <div class="transparency-item">
+              <div class="trans-icon">🤝</div>
+              <h4>Built for the Community</h4>
+              <p>Built by engineering students who understand the stress of month-end budget pinches. Supported by alumni contributions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Campus Social Proof & Student Quotes (India Specific) -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">STUDENT VOICES ACROSS INDIA</span>
+          <h2 class="section-title">Loved by students from 150+ campuses.</h2>
+          <p class="section-sub">From North Campus PGs in Delhi to hostel rooms in Kota, Bangalore, Pune & Chennai.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card glass-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Moved to Delhi from Jaipur for college. Managing ₹8,000 monthly allowance with rent, metro, and food was overwhelming. PocketPeace's 'Safe-to-Spend' kept me from running out of money by the 20th."
+            </p>
+            <div class="review-author">
+              <div class="author-avatar avatar-1">A</div>
+              <div>
+                <div class="author-name">Aarav Sharma</div>
+                <div class="author-school">2nd Year • Delhi University (DU)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Every time I scanned a Paytm or GPay QR for chai or auto, I hated logging into an Excel sheet. PocketPeace takes literally 2 seconds on my phone. Absolute lifesaver for hostel life."
+            </p>
+            <div class="review-author">
+              <div class="author-avatar avatar-2">R</div>
+              <div>
+                <div class="author-name">Rhea Menon</div>
+                <div class="author-school">3rd Year • BITS Pilani</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "The flatmate bill splitter made living in our 3BHK in Koramangala drama-free. We split maid salary, WiFi, and Zepto runs without any awkward 'bhai paise bhej de' reminders."
+            </p>
+            <div class="review-author">
+              <div class="author-avatar avatar-3">S</div>
+              <div>
+                <div class="author-name">Siddharth & Tanmay</div>
+                <div class="author-school">Final Year • MIT Manipal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Empathetic FAQ Section (Accordion) -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title">Everything you might be wondering.</h2>
+          <p class="section-sub">Clear, honest answers. No corporate jargon.</p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do I need to link my bank account or UPI PIN?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>No! PocketPeace never asks for your bank login, debit card, or UPI PIN. You simply set your monthly pocket money (e.g. ₹8,000) and tap to log what you spend in seconds. It is 100% secure and offline-friendly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can my parents or college authorities see my expenses?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>No. Your budget is completely private to you. We believe learning financial independence requires an emotionally safe space where you can track honest expenses without judgment or surveillance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What happens if I overspend my daily ₹ limit on a weekend?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>No scary red alarms! PocketPeace automatically recalculates your remaining balance smoothly across the rest of the days before your next allowance drop. It gently shows you what pacing keeps you comfortable.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Does PocketPeace work when college Wi-Fi or mobile data is slow?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Yes! It works as an instant Progressive Web App (PWA) with local browser storage. You can log your chai or canteen lunch even in a basement lecture hall with zero network coverage.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can I install this on my iPhone or Android device?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Yes! Just open the link in Safari or Chrome and tap 'Add to Home Screen'. It gives you a smooth, fullscreen app icon with instant launch and zero App Store storage overhead.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Warm High-Conversion Closing Hero -->
+    <section class="closing-cta-section">
+      <div class="container">
+        <div class="closing-cta-card glass-card text-center">
+          <span class="cta-pill">🌱 TAKE A DEEP BREATH</span>
+          <h2 class="closing-title">Student budgeting doesn't have to hurt.</h2>
+          <p class="closing-sub">
+            Join thousands of Indian college students enjoying financial peace of mind every single day. 1-click instant access.
+          </p>
+
+          <div class="closing-btn-wrap">
+            <button class="btn btn-oauth btn-google btn-lg" id="btnFooterGoogle">
+              <svg class="google-icon" width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+              <span>Get Started Free with Google</span>
+            </button>
+          </div>
+
+          <div class="closing-footnote">
+            <span>✨ 100% Free Forever • No UPI PIN Needed • Instant Setup</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Micro-Footer -->
+  <footer class="footer-section">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="brand-logo footer-logo">
+          <span class="brand-icon">🌱</span>
+          <span class="brand-name">PocketPeace</span>
+        </div>
+        <p class="footer-tagline">Crafted with empathy for Indian college students navigating life away from home.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#why-free">Why It's Free</a>
+        <a href="#faq">Student FAQ</a>
+        <a href="#privacy" id="btnOpenPrivacyModal">Privacy Promise</a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; <span id="currentYear">2026</span> PocketPeace Project. Free for college students across India.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- 1. Interactive 1-Click Auth Simulation Dialog -->
+  <dialog class="app-dialog" id="authSimDialog">
+    <div class="dialog-card glass-card">
+      <button class="dialog-close-btn" id="btnCloseAuthDialog" aria-label="Close dialog">✕</button>
+      
+      <div class="dialog-header text-center">
+        <div class="dialog-avatar-sparkle">🎓</div>
+        <h3 class="dialog-title">Welcome to PocketPeace!</h3>
+        <p class="dialog-desc" id="authDialogDesc">Simulating 1-Click Instant Sign-In...</p>
+      </div>
+
+      <div class="auth-simulation-box" id="authSimContent">
+        <div class="auth-loading-spinner" id="authSpinner"></div>
+        <div class="auth-success-view" id="authSuccessView" style="display: none;">
+          <div class="success-icon">✨</div>
+          <h4>You're Ready to Roll!</h4>
+          <p>Your student dashboard is prepared with a starting monthly allowance of <strong>₹8,000</strong> (<strong>₹266/day</strong>).</p>
+          <div class="sim-user-card">
+            <span class="user-chip-icon">🎒</span>
+            <div>
+              <div class="user-chip-name">Student Account Active</div>
+              <div class="user-chip-email">student@campus.edu.in</div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block" id="btnEnterApp">Enter Dashboard & Start Tracking</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 2. Custom Expense Quick-Add Dialog in INR -->
+  <dialog class="app-dialog" id="customExpenseDialog">
+    <div class="dialog-card glass-card">
+      <button class="dialog-close-btn" id="btnCloseCustomDialog" aria-label="Close dialog">✕</button>
+      
+      <div class="dialog-header">
+        <h3 class="dialog-title">Log a Campus Expense</h3>
+        <p class="dialog-desc">Track what you just spent in under 3 seconds.</p>
+      </div>
+
+      <form id="customExpenseForm" class="custom-expense-form">
+        <div class="form-group">
+          <label for="customExpenseName">Expense Description</label>
+          <input type="text" id="customExpenseName" placeholder="e.g. Samosa & Chai, Xerox, Late Night Maggi" required class="input-modern" />
+        </div>
+
+        <div class="form-group">
+          <label for="customExpenseAmount">Amount (₹)</label>
+          <input type="number" id="customExpenseAmount" placeholder="40" step="5" min="1" required class="input-modern mono-input" />
+        </div>
+
+        <div class="form-group">
+          <label>Category</label>
+          <div class="category-pill-select" id="catPillSelect">
+            <button type="button" class="cat-pill active" data-cat="☕ Chai/Fuel">☕ Chai/Fuel</button>
+            <button type="button" class="cat-pill" data-cat="🍜 Food/Mess">🍜 Food/Mess</button>
+            <button type="button" class="cat-pill" data-cat="🛺 Travel">🛺 Travel</button>
+            <button type="button" class="cat-pill" data-cat="📚 Xerox/Books">📚 Xerox/Books</button>
+            <button type="button" class="cat-pill" data-cat="🧺 PG/Living">🧺 PG/Living</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Add to Safe-to-Spend Balance</button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- 3. Privacy Promise Dialog -->
+  <dialog class="app-dialog" id="privacyDialog">
+    <div class="dialog-card glass-card">
+      <button class="dialog-close-btn" id="btnClosePrivacyDialog" aria-label="Close dialog">✕</button>
+      
+      <div class="dialog-header">
+        <div class="dialog-avatar-sparkle">🛡️</div>
+        <h3 class="dialog-title">Our Student Privacy Pledge</h3>
+        <p class="dialog-desc">How we protect your peace of mind and data.</p>
+      </div>
+
+      <div class="privacy-body">
+        <p>1. <strong>No Bank or UPI Credentials:</strong> We never ask for your UPI PIN, OTP, debit card, or net banking password.</p>
+        <p>2. <strong>Zero Data Harvesting:</strong> Your personal spending data is never sold to credit card brokers or loan apps.</p>
+        <p>3. <strong>Local First:</strong> Your active session runs directly on your device with private sync.</p>
+      </div>
+      <button class="btn btn-secondary btn-block" id="btnAcknowledgePrivacy">Got it, thank you</button>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
